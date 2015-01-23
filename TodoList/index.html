@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/css.min.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <span class="glyphicon glyphicon-trash" onclick="todo.reset();"></span>
+    <div class="container" id="titleDiv"></div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3" id="mainDiv1">
+                <h1>Create Task</h1>
+                <p>Title</p>
+                <input id="taskTitle" class="form-control" type="text" />
+                <p>Description</p>
+                <textarea id="taskDescription" class="form-control" style="height:300px; width=100%"></textarea>
+                <p>Complete By:</p>
+                <input id="taskDeadline" class="form-control" type="date" />
+                <button class="btn btn-primary" onclick="todo.createTask()">Save</button>
+            </div>
+
+            <div class="col-md-5">
+                <h1>Things to do</h1>
+                <div id="displayTasks"></div>
+            </div>
+
+            <div class="col-md-4">
+                <h1>Completed</h1>
+                <div id="completedTask"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Scripts/jquery-2.1.3.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

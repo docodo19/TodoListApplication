@@ -1,0 +1,21 @@
+﻿body {
+  background-color: #fccd83;
+  font-family: 'Raleway', sans-serif;
+}
+#titleDiv {
+  background-color: #fadeb2;
+}
+#mainDiv1 {
+  background-color: #fed79a;
+}
+#mainDiv2 {
+  background-color: #fcc369;
+}
+#mainDiv3 {
+  background-color: #ffb239;
+}
+.taskBox {
+  border-left: black solid 1px;
+  padding-left: 20px;
+}
+/*# sourceMappingURL=css.css.map */
